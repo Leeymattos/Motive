@@ -30,6 +30,9 @@ function Login() {
 
   async function handleLogin(data: FormValues) {
     try {
+
+      data.email.toLocaleLowerCase();
+
       const response = await api.post('auth/login', data);
 
       setToken(response.data.token);
