@@ -16,7 +16,7 @@ interface CardProps {
 
 export default function MediaCard({ titulo, descricao_breve, foto_url, id }: CardProps) {
   return (
-    <Card sx={{ maxWidth: 450, backgroundColor: "rgba(1, 255, 132, 0.877)" }}>
+    <Card sx={{ width: '100%', backgroundColor: "rgba(1, 255, 132, 0.877)" }}>
       <CardMedia
         sx={{ height: 200 }}
         image={`${foto_url}`}
